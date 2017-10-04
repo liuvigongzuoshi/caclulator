@@ -1,0 +1,14 @@
+{
+  "pages": [
+    "pages/cacl/cacl",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/list/list"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "white",
+    "navigationBarTitleText": "Caclulator",
+    "navigationBarTextStyle": "black"
+  }
+}
