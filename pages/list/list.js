@@ -5,7 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-    log: []
+    logs: []
   },
 
   /**
@@ -13,7 +13,7 @@ Page({
    */
   onLoad: function (options) {
     var logs = wx.getStorageSync('Storagelogs');
-    this.setData({log:logs})
+    this.setData({logs:logs})
   },
 
   /**

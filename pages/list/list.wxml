@@ -1,2 +1,6 @@
 <!--pages/list/list.wxml-->
-<text>pages/list/list.wxml</text>
+<view class='centent'>
+   <view  wx:for="{{logs}}">
+   记录{{index+1}}—{{item}}
+  </view> 
+</view>

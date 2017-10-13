@@ -27,7 +27,8 @@ Page({
     btn20: "=",
     caclData: "0",
     lastSymbol: false,
-    arr: []
+    arr: [],
+    logs: []
   },
 
   /**
@@ -85,6 +86,11 @@ Page({
   onShareAppMessage: function () {
 
   },
+  history: function () {
+    wx.navigateTo({
+      url: '../list/list',
+    })
+  },
   btnClick: function (event) {
     console.log(event.target.id);
     var id = event.target.id;
@@ -100,9 +106,15 @@ Page({
         cd = 0;
       }
       this.setData({ caclData: cd })
+      // 退格去掉一个
+      this.data.arr.pop();
+
     } else if (this.data.btn2 == id) {
       //C键 清屏
       this.setData({ caclData: '0' });
+      //清屏的时候，数组设置长的为0
+      this.data.arr.length = 0;
+
     } else if (this.data.btn19 == id) {
       //±号
       if (cd == 0) {
@@ -112,8 +124,11 @@ Page({
       var fristWord = cd.substring(0, 1);
       if (fristWord == '-') {
         cd = cd.substring(1, cd.length);
+        //如果是‘-’去掉第一个元素
+        this.data.arr.shift();
       } else {
         cd = '-' + cd;
+        this.data.arr.unshift('-');
       }
       this.setData({ caclData: cd });
     } else if (this.data.btn20 == id) {
@@ -132,7 +147,7 @@ Page({
       var arr = this.data.arr;
       var optarr = [];
       for (var i in arr) {
-        if (isNaN(arr[i] == false || arr[i] == this.data.btn17 || arr[i] == this.data.btn19)) {
+        if (isNaN(arr[i]) == false || arr[i] == this.data.btn17 || arr[i] == this.data.btn19) {
           num = num + arr[i];
         } else {
           lastOperator = arr[i];
@@ -143,7 +158,7 @@ Page({
       }
       optarr.push(Number(num));
       var result = Number(optarr[0]) * 1.0;
-      console.log('result' + result);
+      console.log('result:' + result);
       for (var i = 1; i < optarr.length; i++) {
         if (isNaN(optarr[i])) {
           //加减乘除运算
@@ -159,8 +174,10 @@ Page({
         }
       }
       //保存结果值
-      this.data.log.push(data+"="+result);
-      wx.setStorageSync('Storagelogs',this.data.log);
+      this.data.logs.push(cd+"="+result);
+      wx.setStorageSync('Storagelogs',this.data.logs);
+      //取出来看看
+      console.log('取出来看看:' + wx.getStorageSync('Storagelogs'));
       //算完清空数组
       this.data.arr.length = 0;
       this.data.arr.push(result);
@@ -180,6 +197,8 @@ Page({
         cd = cd + id;
       }
       this.setData({ caclData: cd });
+
+      this.data.arr.push(id);
       //判断加减乘除输入是否合法
       if (id == this.data.btn4 || id == this.data.btn8 || id == this.data.btn12 || id == this.data.btn16) {
         this.setData({ lastSymbol: true });

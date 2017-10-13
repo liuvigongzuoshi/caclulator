@@ -24,6 +24,7 @@
   text-align: right;
   border-radius: 3px;
   padding-right: 30rpx;
+  font-size: 28px;
 }
 
 .btnGroup {
