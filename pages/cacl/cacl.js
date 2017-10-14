@@ -8,11 +8,11 @@ Page({
     btn1: "CE",
     btn2: "C",
     btn3: "history",
-    btn4: "/",
+    btn4: "÷",
     btn5: "7",
     btn6: "8",
     btn7: "9",
-    btn8: "*",
+    btn8: "×",
     btn9: "4",
     btn10: "5",
     btn11: "6",
@@ -28,7 +28,7 @@ Page({
     caclData: "0",
     lastSymbol: false,
     arr: [],
-    logs: []
+    logs: [],
   },
 
   /**
@@ -95,8 +95,8 @@ Page({
     console.log(event.target.id);
     var id = event.target.id;
     var cd = this.data.caclData;
-
     if (this.data.btn1 == id) {
+      console.log(cd+'qq11111')
       // CE键 退格
       if (cd == 0) {
         return;

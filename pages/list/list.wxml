@@ -1,6 +1,8 @@
 <!--pages/list/list.wxml-->
 <view class='centent'>
-   <view  wx:for="{{logs}}">
-   记录{{index+1}}—{{item}}
+<image class="main-bg" src="../asserts/img/timg.jpg"></image>
+   <view class='screen'  wx:for="{{logs}}">
+    <!-- 记录{{index+1}}   -->
+   <text>{{item}}</text>
   </view> 
 </view>

@@ -15,16 +15,19 @@
 }
 
 .screen {
-  /* background-color: chocolate; */
+  margin-top: 40rpx;
+    /* background-color: chocolate;   */
   color: white;
   width: 720rpx;
   height: 200rpx;
   box-sizing: border-box;
-  line-height: 200rpx;
+  line-height: 100rpx;
   text-align: right;
   border-radius: 3px;
   padding-right: 30rpx;
   font-size: 28px;
+  overflow: hidden;
+  word-break:break-all;
 }
 
 .btnGroup {
@@ -45,6 +48,10 @@
 .orange {
   color: #fef4e9;
   border: solid 1px #da7c0c;
-  background: rgba(247, 173, 29, 0.1);
+  background-color: rgba(247, 173, 29, 0.1);
   box-sizing: border-box;
+}
+
+.hover {
+  background-color: rgba(247, 173, 29, 0.7);
 }
