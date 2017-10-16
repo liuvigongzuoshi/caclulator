@@ -4,25 +4,25 @@
    {{caclData}}
   </view>
   <view class='btnGroup'>
-    <view class='item orange' hover-class="hover" hover-start-time="10" hover-stay-time="130" bindtap='btnClick' id="{{btn1}}">CE</view>
-    <view class='item orange' hover-class="hover" hover-start-time="10" hover-stay-time="130" bindtap='btnClick' id="{{btn2}}">C</view>
-    <view class='item orange' hover-class="hover" hover-start-time="10" hover-stay-time="130" bindtap='history' id="{{btn3}}">◷</view>
-    <view class='item orange' hover-class="hover" hover-start-time="10" hover-stay-time="130" bindtap='btnClick' id="{{btn4}}">÷</view>
-    <view class='item orange' hover-class="hover" hover-start-time="10" hover-stay-time="130" bindtap='btnClick' id="{{btn5}}">7</view>
-    <view class='item orange' hover-class="hover" hover-start-time="10" hover-stay-time="130" bindtap='btnClick' id="{{btn6}}">8</view>
-    <view class='item orange' hover-class="hover" hover-start-time="10" hover-stay-time="130" bindtap='btnClick' id="{{btn7}}">9</view>
-    <view class='item orange' hover-class="hover" hover-start-time="10" hover-stay-time="130" bindtap='btnClick' id="{{btn8}}">×</view>
-    <view class='item orange' hover-class="hover" hover-start-time="10" hover-stay-time="130" bindtap='btnClick' id="{{btn9}}">4</view>
-    <view class='item orange' hover-class="hover" hover-start-time="10" hover-stay-time="130" bindtap='btnClick' id="{{btn10}}">5</view>
-    <view class='item orange' hover-class="hover" hover-start-time="10" hover-stay-time="130" bindtap='btnClick' id="{{btn11}}">6</view>
-    <view class='item orange' hover-class="hover" hover-start-time="10" hover-stay-time="130" bindtap='btnClick' id="{{btn12}}">-</view>
-    <view class='item orange' hover-class="hover" hover-start-time="10" hover-stay-time="130" bindtap='btnClick' id="{{btn13}}">1</view>
-    <view class='item orange' hover-class="hover" hover-start-time="10" hover-stay-time="130" bindtap='btnClick' id="{{btn14}}">2</view>
-    <view class='item orange' hover-class="hover" hover-start-time="10" hover-stay-time="130" bindtap='btnClick' id="{{btn15}}">3</view>
-    <view class='item orange' hover-class="hover" hover-start-time="10" hover-stay-time="130" bindtap='btnClick' id="{{btn16}}">+</view>
-    <view class='item orange' hover-class="hover" hover-start-time="10" hover-stay-time="130" bindtap='btnClick' id="{{btn17}}">·</view>
-    <view class='item orange' hover-class="hover" hover-start-time="10" hover-stay-time="130" bindtap='btnClick' id="{{btn18}}">0</view>
-    <view class='item orange' hover-class="hover" hover-start-time="10" hover-stay-time="130" bindtap='btnClick' id="{{btn19}}">±</view>
-    <view class='item orange' hover-class="hover" hover-start-time="10" hover-stay-time="130" bindtap='btnClick' id="{{btn20}}">=</view>
+    <view class='item orange' hover-class="hover" hover-start-time="40" hover-stay-time="130" bindtap='btnClick' id="{{btn1}}">CE</view>
+    <view class='item orange' hover-class="hover" hover-start-time="40" hover-stay-time="130" bindtap='btnClick' id="{{btn2}}">C</view>
+    <view class='item orange' hover-class="hover" hover-start-time="40" hover-stay-time="130" bindtap='history' id="{{btn3}}">◷</view>
+    <view class='item orange' hover-class="hover" hover-start-time="40" hover-stay-time="130" bindtap='btnClick' id="{{btn4}}">÷</view>
+    <view class='item orange' hover-class="hover" hover-start-time="40" hover-stay-time="130" bindtap='btnClick' id="{{btn5}}">7</view>
+    <view class='item orange' hover-class="hover" hover-start-time="40" hover-stay-time="130" bindtap='btnClick' id="{{btn6}}">8</view>
+    <view class='item orange' hover-class="hover" hover-start-time="40" hover-stay-time="130" bindtap='btnClick' id="{{btn7}}">9</view>
+    <view class='item orange' hover-class="hover" hover-start-time="40" hover-stay-time="130" bindtap='btnClick' id="{{btn8}}">×</view>
+    <view class='item orange' hover-class="hover" hover-start-time="40" hover-stay-time="130" bindtap='btnClick' id="{{btn9}}">4</view>
+    <view class='item orange' hover-class="hover" hover-start-time="40" hover-stay-time="130" bindtap='btnClick' id="{{btn40}}">5</view>
+    <view class='item orange' hover-class="hover" hover-start-time="40" hover-stay-time="130" bindtap='btnClick' id="{{btn11}}">6</view>
+    <view class='item orange' hover-class="hover" hover-start-time="40" hover-stay-time="130" bindtap='btnClick' id="{{btn12}}">-</view>
+    <view class='item orange' hover-class="hover" hover-start-time="40" hover-stay-time="130" bindtap='btnClick' id="{{btn13}}">1</view>
+    <view class='item orange' hover-class="hover" hover-start-time="40" hover-stay-time="130" bindtap='btnClick' id="{{btn14}}">2</view>
+    <view class='item orange' hover-class="hover" hover-start-time="40" hover-stay-time="130" bindtap='btnClick' id="{{btn15}}">3</view>
+    <view class='item orange' hover-class="hover" hover-start-time="40" hover-stay-time="130" bindtap='btnClick' id="{{btn16}}">+</view>
+    <view class='item orange' hover-class="hover" hover-start-time="40" hover-stay-time="130" bindtap='btnClick' id="{{btn17}}">·</view>
+    <view class='item orange' hover-class="hover" hover-start-time="40" hover-stay-time="130" bindtap='btnClick' id="{{btn18}}">0</view>
+    <view class='item orange' hover-class="hover" hover-start-time="40" hover-stay-time="130" bindtap='btnClick' id="{{btn19}}">±</view>
+    <view class='item orange' hover-class="hover" hover-start-time="40" hover-stay-time="130" bindtap='btnClick' id="{{btn20}}">=</view>
   </view>
 </view>
